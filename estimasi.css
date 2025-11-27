@@ -52,3 +52,8 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
+.field.textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
