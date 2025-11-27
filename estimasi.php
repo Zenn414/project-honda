@@ -37,9 +37,9 @@
                     <p>Ammar</p>
                 </div>
 
-                 <div class="field">
+                 <div class="field textarea">
                     <p>Keluhan: </p>
-                    <span>Ammar</span>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis odit necessitatibus tenetur non natus commodi facilis et at quasi, accusamus vel placeat eius eaque quod aspernatur eos dolor, illum aliquam?</span>
                 </div>
 
             </div>
