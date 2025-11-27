@@ -28,7 +28,7 @@
               <div class="field">
                 <label for="">Jenis Motor </label>
                <select name="jenis_motor" id="">
-                <option value="">Honda</option>
+                <option value="honda">Honda</option>
                 <option value="">Beat</option>
                </select>
                 </div>
@@ -36,12 +36,12 @@
 
                 <div class="field">
                 <label for="">Tahun Pembuatan </label>
-                <input type="text" name="" id="">
+                <input type="text" name="tahun_pembuatan" id="">
                 </div>
 
                  <div class="field">
                 <label for="">Keluhan</label>
-                <textarea name="" id=""></textarea>
+                <textarea name="keluhan" id=""></textarea>
                 </div>
 
                 <button>Kirim</button>
