@@ -33,8 +33,7 @@
 =======
                 <label for="">Jenis Motor </label>
                <select name="jenis_motor" id="">
-                <option value="honda">Honda</option>
->>>>>>> f1f389d160d707c49fd84e00593f52cac4fcfb26
+                <option value="">Honda</option>
                 <option value="">Beat</option>
                </select>
                 </div>
@@ -56,8 +55,7 @@
 
                  <div class="field">
                 <label for="">Keluhan</label>
-                <textarea name="keluhan" id=""></textarea>
->>>>>>> f1f389d160d707c49fd84e00593f52cac4fcfb26
+                <textarea name="" id=""></textarea>
                 </div>
 
                 <button>Kirim</button>
