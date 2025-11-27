@@ -1,4 +1,6 @@
 <?php
+include 'db.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -18,34 +20,34 @@
             <div class="output">
                 <div class="field">
                     <p>Nama: </p>
-                    <span>Ammar</span>
+                    <span><?= $nama ?></span>
                     
                 </div>
                 
                  <div class="field">
                     <p>No Telp: </p>
-                    <span>Ammar</span>
+                    <span><?= $telepon ?></span>
                 </div>
 
                  <div class="field">
                     <p>Tipe Motor: </p>
-                    <span>Ammar</span>
+                    <span><?= $typeMotor ?></span>
                 </div>
 
                  <div class="field">
                     <p> Tahun Keluaran: </p>
-                    <p>Ammar</p>
+                    <p><?= $tahunPembuatan ?></p>
                 </div>
 
                  <div class="field textarea">
                     <p>Keluhan: </p>
-                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis odit necessitatibus tenetur non natus commodi facilis et at quasi, accusamus vel placeat eius eaque quod aspernatur eos dolor, illum aliquam?</span>
+                    <span><?= $keluhan ?></span>
                 </div>
 
             </div>
 
             <div class="date">
-                <p>21/2/2025</p>
+                <p><?= $tanggalServis ?></p>
             </div>
         </div>
     </div>
