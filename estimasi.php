@@ -1,7 +1,23 @@
 <?php
 include 'db.php';
+if (!isset($_GET['id'])) {
+    die("ID tidak ditemukan pada URL");
+}
+
+$id = intval($_GET['id']);
+
+$q = mysqli_query($conn, "SELECT * FROM datamotor WHERE id = $id");
+$data = mysqli_fetch_assoc($q);
+
+$nama           = $data['nama'];
+$telepon        = $data['telepon'];
+$typeMotor      = $data['jenis_motor'];
+$tahunPembuatan = $data['tahun_pembuatan'];
+$keluhan        = $data['feedback'];
+$tanggalServis  = $data['tgl_servis'];
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

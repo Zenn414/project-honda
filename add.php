@@ -12,10 +12,13 @@ $query = "INSERT INTO datamotor(tgl_servis, nama, telepon, jenis_motor, tahun_pe
 $hasil = mysqli_query($conn, $query);
 
 if ($hasil) {
+    $idBaru = mysqli_insert_id($conn);
     echo "
     <script>
         alert('Data berhasil disimpan.');
-        window.location='estimasi.php';
-    </script>;
+        window.location='estimasi.php?id=$idBaru';
+    </script>
     ";
+} else {
+    echo "Terjadi kesalahan: " . mysqli_error($conn);
 }
