@@ -17,26 +17,26 @@
             <img src="img/logo-cg.jpg" alt="">
         </div>
         </div>
-        <form action="example.html">
+        <form action="add.php" method="POST">
             
             <!-- Inputan -->
 
              <!-- Nama -->
             <div class="field">
                 <label for="">Nama: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="nama" id="">
             </div>
 
                  <!-- No telp -->
               <div class="field">
                 <label for="">No Telp: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="telepon" id="">
             </div>
 
             <!-- Tipe Motor -->
               <div class="field">
                 <label for="">Tipe Motor: </label>
-               <select name="" id="">
+               <select name="jenis_motor" id="">
                 <option value="vario">Vario</option>
                 <option value="beat">Beat</option>
                  <option value="scoopy">Scoopy</option>
@@ -49,13 +49,13 @@
                  <!-- Tahun Pembuatan -->
                 <div class="field">
                 <label for="">Tahun Pembuatan: </label>
-                <input type="text" name="" id="">
+                <input type="text" name="tahun_pembuatan" id="">
                 </div>
                 
                 <!-- Keluhan -->
                  <div class="field">
                 <label for="">Keluhan: </label>
-                <textarea name="" id=""></textarea>
+                <textarea name="keluhan" id=""></textarea>
                 </div>
 
                 <!-- Button -->
