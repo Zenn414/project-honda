@@ -26,15 +26,22 @@
             </div>
 
               <div class="field">
+<<<<<<< HEAD
                 <label for="jenis_motor">Jenis Motor </label>
                <select name="jenis_motor" id="jenis_motor">
                 <option value="">Honda</option>
+=======
+                <label for="">Jenis Motor </label>
+               <select name="jenis_motor" id="">
+                <option value="honda">Honda</option>
+>>>>>>> f1f389d160d707c49fd84e00593f52cac4fcfb26
                 <option value="">Beat</option>
                </select>
                 </div>
                
 
                 <div class="field">
+<<<<<<< HEAD
                 <label for="tahun_pembuatan">Tahun Pembuatan </label>
                 <input type="varchar" name="tahun_pembuatan" id="tahun_pembuatan">
                 </div>
@@ -42,6 +49,15 @@
                  <div class="field">
                 <label for="feedback">Keluhan</label>
                 <textarea name="feedback" id="feedback"></textarea>
+=======
+                <label for="">Tahun Pembuatan </label>
+                <input type="text" name="tahun_pembuatan" id="">
+                </div>
+
+                 <div class="field">
+                <label for="">Keluhan</label>
+                <textarea name="keluhan" id=""></textarea>
+>>>>>>> f1f389d160d707c49fd84e00593f52cac4fcfb26
                 </div>
 
                 <button>Kirim</button>
