@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estimasi</title>
+    <link rel="stylesheet" href="estimasi.css">
 </head>
 <body>
     <div class="contain">
@@ -17,23 +18,28 @@
             <div class="output">
                 <div class="field">
                     <p>Nama: </p>
+                    <span>Ammar</span>
                     
                 </div>
                 
                  <div class="field">
                     <p>No Telp: </p>
+                    <span>Ammar</span>
                 </div>
 
                  <div class="field">
                     <p>Tipe Motor: </p>
+                    <span>Ammar</span>
                 </div>
 
                  <div class="field">
                     <p> Tahun Keluaran: </p>
+                    <p>Ammar</p>
                 </div>
 
                  <div class="field">
                     <p>Keluhan: </p>
+                    <span>Ammar</span>
                 </div>
 
             </div>
