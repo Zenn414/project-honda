@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,16 +11,86 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.contain{
-    width: 300px;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: aqua;
-}
-.field{
-   width: 100%;
-   display: flex;
-   flex-direction: column;
+    padding: 20px;
    
 }
+.contain h1{
+    color: white;
+}
+.contain{
+    width: 450px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background:transparent;
+    font-family: "Roboto";
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 2px solid black;
+    
+}
+
+.contain h1{
+    margin-bottom: 10px;
+    color: black;
+}
+.card-header{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-header .logo img{
+    width: 35px;
+    height:35px;
+}
+.logo{
+    gap: 5px;
+}
+.card-header h1::before{
+    content: "";
+    position: absolute;
+    height:8px;
+    width: 30%;
+    top: 100%;
+    background-color:rgb(189, 11, 11); ;
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.field label{
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.field input{
+    height: 45px;
+    border: 1px solid black;
+    padding: 0 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.field select{
+    width: 40%;
+    height: 30px;
+}
+.field textarea{
+    width: 100%;
+    height: 150px;
+}
+
+form{
+    margin-top: 30px;
+}
+
+form button{
+    padding: 8px 25px;
+    border: none;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(189, 11, 11);
+}
+form .field{
+    margin-bottom: 7px;
+}
+
