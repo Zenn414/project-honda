@@ -2,7 +2,7 @@
 
 $conn = mysqli_connect("localhost", "root", "", "servismotor");
 
-if($conn){
+if(!$conn){
     die("Data Error");
 }
 
