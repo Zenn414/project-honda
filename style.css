@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    padding: 100px;
    
 }
 .contain h1{
@@ -25,6 +25,7 @@ body{
     font-family: "Roboto";
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border: 2px solid black;
+    margin: 10px 0;
     
 }
 
@@ -51,7 +52,7 @@ body{
     height:8px;
     width: 30%;
     top: 100%;
-    background-color:rgb(189, 11, 11); ;
+    background-color:rgb(189, 11, 11);
 }
 
 .field{
