@@ -22,7 +22,7 @@
 
               <div class="field">
                 <label for="telepon">No Telp </label>
-                <input type="text" name="telepon" id="telepon">
+                <input type="varchar" name="telepon" id="telepon">
             </div>
 
               <div class="field">
@@ -36,7 +36,7 @@
 
                 <div class="field">
                 <label for="tahun_pembuatan">Tahun Pembuatan </label>
-                <input type="text" name="tahun_pembuatan" id="tahun_pembuatan">
+                <input type="varchar" name="tahun_pembuatan" id="tahun_pembuatan">
                 </div>
 
                  <div class="field">
