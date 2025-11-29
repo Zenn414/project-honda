@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="icon" href="https://ujian.smkcaturglobal.sch.id/pluginfile.php/1/core_admin/logocompact/300x300/1726942860/logo%20catur%20global.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,9 +29,14 @@
             </div>
 
                  <!-- No telp -->
-              <div class="field">
+            <div class="field">
                 <label for="">No Telp: </label>
                 <input type="text" name="telepon" id="">
+            </div>
+
+            <div class="field">
+                <label for="">No plat: </label>
+                <input type="text" name="no_plat" id="">
             </div>
 
             <!-- Tipe Motor -->
@@ -39,9 +45,11 @@
                <select name="jenis_motor" id="">
                 <option value="vario">Vario</option>
                 <option value="beat">Beat</option>
-                 <option value="scoopy">Scoopy</option>
+                <option value="scoopy">Scoopy</option>
                 <option value="supra">Supra</option>
-                 <option value="stylo">Stylo</option>
+                <option value="stylo">Stylo</option>
+                <option value="CBR 150R">CBR 150R</option>
+                <option value="PCX">PCX</option>
                  
                </select>
                 </div>
@@ -54,8 +62,8 @@
                 
                 <!-- Keluhan -->
                  <div class="field">
-                <label for="">Keluhan: </label>
-                <textarea name="keluhan" id=""></textarea>
+                <label for="">Harga Serivs: </label>
+                <input type="number" name="harga_servis" id=""></input>
                 </div>
 
                 <!-- Button -->

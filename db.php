@@ -1,9 +1,9 @@
 <?php
 
-$conn = mysqli_connect("10.50.100.31", "root", "", "servismotor");
+$conn = new mysqli("localhost", "root", "", "habit_factory");
 
-if(!$conn){
-    die("Data Error");
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $koneksi->connect_error);
 }
 
 ?>

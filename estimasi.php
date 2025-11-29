@@ -6,15 +6,23 @@ if (!isset($_GET['id'])) {
 
 $id = intval($_GET['id']);
 
-$q = mysqli_query($conn, "SELECT * FROM datamotor WHERE id = $id");
-$data = mysqli_fetch_assoc($q);
+$q = $conn->query("SELECT * FROM tbl_habit_factory WHERE id = $id");
+if (!$q) {
+    die("Query gagal: " . $conn->error);
+}
 
-$nama           = $data['nama'];
-$telepon        = $data['telepon'];
-$typeMotor      = $data['jenis_motor'];
+$data = $q->fetch_assoc();
+if (!$data) {
+    die("Data tidak ditemukan");
+}
+
+$nama = $data['nama_pemilik'];
+$telepon = $data['no_telepon'];
+$noPlat = $data['plat_nomor'];
+$jenisMotor = $data['jenis_motor'];
 $tahunPembuatan = $data['tahun_pembuatan'];
-$keluhan        = $data['feedback'];
-$tanggalServis  = $data['tgl_servis'];
+$hargaServis = $data['harga_servis'];
+$tanggalServis = $data['tgl_daftar'];
 
 ?>
 
@@ -25,6 +33,7 @@ $tanggalServis  = $data['tgl_servis'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estimasi</title>
+    <link rel="icon" href="https://ujian.smkcaturglobal.sch.id/pluginfile.php/1/core_admin/logocompact/300x300/1726942860/logo%20catur%20global.png">
     <link rel="stylesheet" href="estimasi.css">
 </head>
 <body>
@@ -40,14 +49,19 @@ $tanggalServis  = $data['tgl_servis'];
                     
                 </div>
                 
-                 <div class="field">
+                <div class="field">
                     <p>No Telp: </p>
                     <span><?= $telepon ?></span>
                 </div>
 
+                <div class="field">
+                    <p>No Plat: </p>
+                    <span><?= $noPlat ?></span>
+                </div>
+
                  <div class="field">
                     <p>Tipe Motor: </p>
-                    <span><?= $typeMotor ?></span>
+                    <span><?= $jenisMotor ?></span>
                 </div>
 
                  <div class="field">
@@ -56,8 +70,8 @@ $tanggalServis  = $data['tgl_servis'];
                 </div>
 
                  <div class="field textarea">
-                    <p>Keluhan: </p>
-                    <span><?= $keluhan ?></span>
+                    <p>Harga Serivs: </p>
+                    <span><?= $hargaServis ?></span>
                 </div>
 
             </div>
@@ -67,5 +81,8 @@ $tanggalServis  = $data['tgl_servis'];
             </div>
         </div>
     </div>
+    <form action="lihat_data.php">
+        <button type="submit">Lihat Data</button>
+    </form>
 </body>
 </html>

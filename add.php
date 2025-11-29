@@ -1,15 +1,16 @@
 <?php
 include 'db.php';
 
-$tanggalServis = date('Y-m-d H:i:s');
 $nama = $_POST['nama'];
 $telepon = $_POST['telepon'];
-$typeMotor = $_POST['jenis_motor'];
+$noPlat = $_POST['no_plat'];
+$jenisMotor = $_POST['jenis_motor'];
 $tahunPembuatan = $_POST['tahun_pembuatan'];
-$keluhan = $_POST['keluhan'];
-
-$query = "INSERT INTO datamotor(tgl_servis, nama, telepon, jenis_motor, tahun_pembuatan, feedback) VALUES ('$tanggalServis', '$nama', '$telepon', '$typeMotor', '$tahunPembuatan', '$keluhan')";
-$hasil = mysqli_query($conn, $query);
+$hargaServis = $_POST['harga_servis'];
+date_default_timezone_set('Asia/Jakarta');
+$tanggalServis = date('Y-m-d H:i:s');
+$query = "INSERT INTO tbl_habit_factory(nama_pemilik, no_telepon, plat_nomor, jenis_motor, tahun_pembuatan, harga_servis, tgl_daftar) VALUES ('$nama', '$telepon', '$noPlat', '$jenisMotor', '$tahunPembuatan', '$hargaServis', '$tanggalServis')";
+$hasil = $conn->query($query);
 
 if ($hasil) {
     $idBaru = mysqli_insert_id($conn);
