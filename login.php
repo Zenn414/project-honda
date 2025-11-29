@@ -25,24 +25,24 @@
              <!-- Nama -->
             <div class="field">
                 <label for="">Nama: </label>
-                <input type="text" name="nama" id="">
+                <input type="text" name="nama" id="" maxlength="75">
             </div>
 
                  <!-- No telp -->
             <div class="field">
                 <label for="">No Telp: </label>
-                <input type="text" name="telepon" id="">
+                <input type="text" name="telepon" id="" maxlength="17"> 
             </div>
 
             <div class="field">
                 <label for="">No plat: </label>
-                <input type="text" name="no_plat" id="">
+                <input type="text" name="no_plat" id="" maxlength="10">
             </div>
 
             <!-- Tipe Motor -->
               <div class="field">
                 <label for="">Tipe Motor: </label>
-               <select name="jenis_motor" id="">
+               <select name="jenis_motor" id="" maxlength="25">
                 <option value="vario">Vario</option>
                 <option value="beat">Beat</option>
                 <option value="scoopy">Scoopy</option>
@@ -57,7 +57,7 @@
                  <!-- Tahun Pembuatan -->
                 <div class="field">
                 <label for="">Tahun Pembuatan: </label>
-                <input type="text" name="tahun_pembuatan" id="">
+                <input type="text" name="tahun_pembuatan" id="" maxlength="4">
                 </div>
                 
                 <!-- Keluhan -->
