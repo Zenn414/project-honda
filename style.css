@@ -90,6 +90,7 @@ form button{
     font-weight: 400;
     color: white;
     background-color: rgb(189, 11, 11);
+    cursor: pointer;
 }
 form .field{
     margin-bottom: 7px;
