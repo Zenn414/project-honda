@@ -26,16 +26,18 @@
 <body>
     <div class="container">
 
-        <!-- Page Utama -->
+        <!-- Page Utama 1-->
         <div class="page-utama">
             <h1>Yuk Service!!</h1>
             <span>Cepat, Aman, dan Profesional – Solusi Service Motor Honda Favoritmu</span>
             
-                <button>
+            
+                <button onclick="window.location.href='login.php'">
                     <div class="btn-daftar">
-                <i class="ri-user-line"></i>
-                <span>Daftar</span>
-            </div></button>
+                        <i class="ri-user-line"></i>
+                        <span>Daftar</span>
+                    </div>
+                </button>
             
             
             <!-- Sosial Media -->
@@ -46,6 +48,7 @@
             </div>
         </div>
 
+        <!-- INFORMATION PAGE 2 -->
         <div class="information">
             <div class="img">
                 <img src="assets/img1.png" alt="" width="100">
@@ -68,8 +71,11 @@
                     </div>
         </div>
 
+
+        <!-- SERVICE PAGE 3 -->
         <div class="service">
             <h1>Kenapa Harus Service Disini</h1>
+
             <!-- MODE SCREEN 700+ -->
             <div class="wrapper-service">
                 <div class="card">
@@ -155,10 +161,12 @@
                 </div>
         </div>
 
+            <!-- MAP PAGE 4 -->
        <div class="map">
            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3672506759667!2d106.99229197355415!3d-6.215203460873273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698bf80e041029%3A0xfa0e220c53bbec83!2sSMK%20Catur%20Global%20Kota%20Bekasi!5e0!3m2!1sid!2sid!4v1764325232847!5m2!1sid!2sid" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div> 
 
+            <!-- FOOTER PAGE 5 -->
         <div class="footer">
             <div class="wrapper-about">
                 <div class="tentang-kami">
