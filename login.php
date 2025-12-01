@@ -11,7 +11,7 @@
     <div class="contain">
         <!-- h1 -->
         <div class="card-header">
-        <h1>Service Motor</h1>
+        <h1> Daftar Repaint Helm</h1>
 
         <div class="logo">
             <img src="img/logo-honda.png" alt="" width="100">
@@ -33,37 +33,16 @@
                 <label for="">No Telp: </label>
                 <input type="text" name="telepon" id="">
             </div>
-
+                
             <div class="field">
-                <label for="">No plat: </label>
-                <input type="text" name="no_plat" id="">
+                <label for="">Warna Helm: </label>
+                <input type="text" name="warna_helm" id="">
             </div>
 
-            <!-- Tipe Motor -->
-              <div class="field">
-                <label for="">Tipe Motor: </label>
-               <select name="jenis_motor" id="">
-                <option value="vario">Vario</option>
-                <option value="beat">Beat</option>
-                <option value="scoopy">Scoopy</option>
-                <option value="supra">Supra</option>
-                <option value="stylo">Stylo</option>
-                <option value="CBR 150R">CBR 150R</option>
-                <option value="PCX">PCX</option>
-                 
-               </select>
-                </div>
-               
-                 <!-- Tahun Pembuatan -->
-                <div class="field">
-                <label for="">Tahun Pembuatan: </label>
-                <input type="text" name="tahun_pembuatan" id="">
-                </div>
-                
                 <!-- Keluhan -->
                  <div class="field">
-                <label for="">Harga Serivs: </label>
-                <input type="number" name="harga_servis" id=""></input>
+                <label for="">Harga Repaint: </label>
+                <input type="number" name="harga_repaint" id=""></input>
                 </div>
 
                 <!-- Button -->

@@ -24,7 +24,7 @@ include 'db.php';
     }
     ?>
 
-    <h3>Daftar Data Buku</h3>
+    <h3>Daftar Data Pelanggan</h3>
     <table border="1" cellpadding="10" cellspasing="0">
         <tr>
             <th>ID</th>

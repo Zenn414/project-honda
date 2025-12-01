@@ -45,7 +45,8 @@ while ($data = $result->fetch_assoc()) {
 
 // 5. DOWNLOAD FILE
 $writer = new Xlsx($spreadsheet);
-$filename = "export_" . date("Y-m-d_H-i-s") . ".xlsx";
+date_default_timezone_set('Asia/Jakarta');
+$filename = "servis-motor-honda-" . date("Y-m-d") . ".xlsx";
 
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 header("Content-Disposition: attachment; filename=" . $filename);
